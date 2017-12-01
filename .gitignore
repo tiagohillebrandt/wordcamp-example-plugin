@@ -1,0 +1,7 @@
+# OS files
+.*.swp
+.DS_Store
+
+# Libraries
+/vendor
+/node_modules
