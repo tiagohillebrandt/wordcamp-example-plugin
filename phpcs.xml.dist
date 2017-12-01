@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="WordCamp Example Plugin">
+  <description>The coding standards for WordCamp Example Plugin.</description>
+
+  <arg name="extensions" value="php"/>
+  <arg value="s"/>
+
+  <file>.</file>
+
+  <exclude-pattern>/(node_modules|vendor|languages)/*</exclude-pattern>
+  <exclude-pattern>/index\.php</exclude-pattern>
+
+  <!-- Include the WordPress-Core standard. -->
+  <rule ref="WordPress-Core">
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+  </rule>
+
+  <!-- Indent using spaces instead of tabs. -->
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="exact" value="true"/>
+    </properties>
+  </rule>
+
+  <!-- Include the PHP compatibility checker for PHP 5.5 or higher. -->
+  <config name="testVersion" value="5.5-"/>
+  <rule ref="PHPCompatibility"/>
+</ruleset>

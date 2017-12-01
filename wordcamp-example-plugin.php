@@ -24,10 +24,10 @@ define( 'WCSP_INC_DIR', WCSP_PLUGIN_DIR . '/includes' );
 
 require_once WCSP_INC_DIR . '/class-wordcamp-example-plugin.php';
 
-add_action( 'init', array( 'WCSP_Example_Plugin', 'init' ) );
+add_action( 'init', array( 'WordCamp_Example_Plugin', 'init' ) );
 
 if ( is_admin() ) {
     require_once WCSP_INC_DIR . '/class-wordcamp-example-plugin-admin.php';
 
-    add_action( 'init', array( 'WCSP_Example_Plugin_Admin', 'init' ) );
+    add_action( 'init', array( 'WordCamp_Example_Plugin_Admin', 'init' ) );
 }
