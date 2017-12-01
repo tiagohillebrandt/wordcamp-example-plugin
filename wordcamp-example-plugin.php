@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+define( 'WCSP', true );
 define( 'WCSP_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'WCSP_INC_DIR', WCSP_PLUGIN_DIR . '/includes' );
 
