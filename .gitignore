@@ -5,3 +5,6 @@
 # Libraries
 /vendor
 /node_modules
+
+# Build file
+wordcamp-example-plugin.zip

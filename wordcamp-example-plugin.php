@@ -25,7 +25,7 @@ define( 'WCSP_INC_DIR', WCSP_PLUGIN_DIR . '/includes' );
 
 require_once WCSP_INC_DIR . '/class-wordcamp-example-plugin.php';
 
-add_action( 'init', array( 'WordCamp_Example_Plugin', 'init' ) );
+register_uninstall_hook( __FILE__, array( 'WordCamp_Example_Plugin', 'plugin_uninstall' ) );
 
 if ( is_admin() ) {
     require_once WCSP_INC_DIR . '/class-wordcamp-example-plugin-admin.php';

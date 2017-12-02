@@ -2,7 +2,9 @@
 <ruleset name="WordCamp Example Plugin">
   <description>The coding standards for WordCamp Example Plugin.</description>
 
+  <arg name="colors"/>
   <arg name="extensions" value="php"/>
+
   <arg value="s"/>
 
   <file>.</file>

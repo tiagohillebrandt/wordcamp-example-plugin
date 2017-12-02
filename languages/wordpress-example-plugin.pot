@@ -1,0 +1,54 @@
+# Copyright (C) 2017 Tiago Hillebrandt
+# This file is distributed under the GPL-3.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordCamp Example Plugin 1.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/wordcamp-example-plugin\n"
+"POT-Creation-Date: 2017-12-02 06:54:50+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n1.0.1\n"
+
+#: includes/class-wordcamp-example-plugin-admin.php:8 views/main.php:10
+msgid "WordCamp São Paulo 2017"
+msgstr ""
+
+#: views/main.php:12
+msgid ""
+"This plugin pulls the list of attendees from WordCamp São Paulo 2017 site "
+"via WordPress REST API, and then displays the name of the attendees at this "
+"page."
+msgstr ""
+
+#: views/main.php:15
+msgid "Attendees"
+msgstr ""
+
+#: views/main.php:19
+msgid "ERROR: Unable to retrieve the list of ateendees."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WordCamp Example Plugin"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/tiagohillebrandt/wordcamp-example-plugin"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Example plugin created for WordCamp Sao Paulo 2017."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tiago Hillebrandt"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://tiagohillebrandt.com"
+msgstr ""

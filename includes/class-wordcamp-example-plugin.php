@@ -2,10 +2,6 @@
 class WordCamp_Example_Plugin {
     const WCSP_ATTENDEES_TRANSIENT = 'wcsp_attendees';
 
-    public static function init() {
-
-    }
-
     public static function get_attendees() {
         $attendees = get_transient( self::WCSP_ATTENDEES_TRANSIENT );
 
@@ -24,5 +20,11 @@ class WordCamp_Example_Plugin {
         }
 
         return $attendees;
+    }
+
+    public static function plugin_uninstall() {
+        if ( get_transient( self::WCSP_ATTENDEES_TRANSIENT ) ) {
+            delete_transient( self::WCSP_ATTENDEES_TRANSIENT );
+        }
     }
 }
