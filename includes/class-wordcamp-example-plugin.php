@@ -1,7 +1,18 @@
 <?php
+/**
+ * The WordCamp_Example_Plugin class
+ *
+ * @package wordcamp-example-plugin
+ * @since 1.0
+ */
 class WordCamp_Example_Plugin {
     const WCSP_ATTENDEES_TRANSIENT = 'wcsp_attendees';
 
+    /**
+     * Retrieves the list of attendees.
+     *
+     * @since 1.0
+     */
     public static function get_attendees() {
         $attendees = get_transient( self::WCSP_ATTENDEES_TRANSIENT );
 
@@ -22,6 +33,11 @@ class WordCamp_Example_Plugin {
         return $attendees;
     }
 
+    /**
+     * Cleans up the transient when plugin is uninstalled.
+     *
+     * @since 1.0
+     */
     public static function plugin_uninstall() {
         if ( get_transient( self::WCSP_ATTENDEES_TRANSIENT ) ) {
             delete_transient( self::WCSP_ATTENDEES_TRANSIENT );

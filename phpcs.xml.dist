@@ -24,6 +24,11 @@
     </properties>
   </rule>
 
+  <!-- Include the WordPress-Docs standard. -->
+  <rule ref="WordPress-Docs">
+    <exclude name="Squiz.Commenting.FileComment.Missing"/>
+  </rule>
+
   <!-- Include the PHP compatibility checker for PHP 5.5 or higher. -->
   <config name="testVersion" value="5.5-"/>
   <rule ref="PHPCompatibility"/>
