@@ -5,7 +5,7 @@ class WordCamp_Example_Plugin_Admin {
     }
 
     public static function admin_menu() {
-        add_menu_page( __( 'WordCamp São Paulo 2017', 'wordcamp-example-plugin' ), __( 'WordCamp São Paulo 2017', 'wordcamp-example-plugin' ), 'manage_options', 'wcsp-example-plugin', array( __class__, 'admin_page' ) );
+        add_menu_page( __( 'WordCamp São Paulo 2017', 'wordcamp-example-plugin' ), __( 'WordCamp São Paulo 2017', 'wordcamp-example-plugin' ), 'read', 'wcsp-example-plugin', array( __class__, 'admin_page' ) );
     }
 
     public static function admin_page() {
